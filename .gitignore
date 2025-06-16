@@ -1,6 +1,9 @@
 # Ignore build artifacts
 build/
 
+# Ignore drives
+drives/
+
 # Ignore recovered video
 video/*.mp4
 
