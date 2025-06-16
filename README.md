@@ -31,7 +31,7 @@ This project implements a RAID-6 data recovery system that recovers a video file
 
 - Extract the base64 portion and save it to `base64.txt`.
 
-### 2 Stage 2: Extract Archive From Base64
+### Stage 2: Extract Archive From Base64
 
 - Convert the extracted base64 string to a `.tar.gz` file and extract it:
   ```bash
@@ -40,7 +40,7 @@ This project implements a RAID-6 data recovery system that recovers a video file
 
 - This produces sector files for 8 drives.
 
-### Stage 3: 8-Drive R Recovery
+### Stage 3: 8-Drive Recovery
 
 - Input: 839 sectors of 512-byte blocks from 8 drives.
 - Process:
@@ -49,7 +49,7 @@ This project implements a RAID-6 data recovery system that recovers a video file
   - Processes sectors using precomputed Galois Field tables.
 - Output: Base64-encoded video data (`base64.txt`).
 
-### 4 Final Output
+### Stage 4 Final Output
 
 - Decode and extract the final video file from `base64.txt`, resulting in:
 
