@@ -1,0 +1,8 @@
+# Ignore build artifacts
+build/
+
+# Ignore recovered video
+video/*.mp4
+
+# Ignore any core dumps 
+core
